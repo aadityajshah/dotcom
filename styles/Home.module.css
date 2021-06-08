@@ -1,3 +1,4 @@
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -36,7 +37,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: blueviolet;
   text-decoration: none;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #225896;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -95,8 +96,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: blueviolet;
+  border-color: blueviolet;
 }
 
 .card h3 {

@@ -1,5 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faGitSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   return (
@@ -20,15 +24,19 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/AJShah.pdf" className={styles.card}>
             <h3>Résumé &rarr;</h3>
             <p>Download a copy of my résumé.</p>
           </a>
 
-          <a href="/blog" className={styles.card}>
-            <h3>Blog &rarr;</h3>
-            <p>Read my rants...</p>
-          </a>
+          <div className={styles.card}>{' '}
+              <Link href="/blog/first-post">
+                <a>
+                  <h3>Blog &rarr;</h3>
+                  <p>Read my rants...</p>
+                </a>
+              </Link>
+          </div>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
@@ -54,9 +62,36 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
             >
-              Link{' '}
-              
-            </a>
+              <FontAwesomeIcon icon={faLinkedin} width="16" className="fa_icon"/>
+          </a>
+          <a 
+            href="https://www.facebook.com/nagarseth"
+            target="_blank"
+            rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faFacebookSquare} width="16" className="fa_icon"/>
+          </a>
+          <a
+            href="https://www.twitter.com/nagerseth"
+            target="_blank"
+            rel="noreferrer"
+            >
+              &nbsp;<FontAwesomeIcon icon={faTwitterSquare} width="16" className="fa_icon"/>
+          </a>
+          <a
+            href="https://www.github.com/aadityajshah"
+            target="_blank"
+            rel="noreferrer"
+            >
+              &nbsp;<FontAwesomeIcon icon={faGitSquare} width="16" className="fa_icon"/>
+          </a>
+          <a
+            href="https://www.instagram.com/nagerseth"
+            target="_blank"
+            rel="noreferrer"
+            >
+              &nbsp;<FontAwesomeIcon icon={faInstagramSquare} width="16" className="fa_icon"/>
+          </a>
         </p>
       </main>
 
