@@ -25,7 +25,7 @@ export default function Home() {
             <p>Download a copy of my résumé.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <a href="/blog" className={styles.card}>
             <h3>Blog &rarr;</h3>
             <p>Read my rants...</p>
           </a>
@@ -48,12 +48,22 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <p>
+          <a 
+            href="https://www.linkedin.com/in/aadityajshah"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Link{' '}
+              
+            </a>
+        </p>
       </main>
 
       <footer className={styles.footer}>
       <p>
         Copyright 2021 Aaditya Shah.&nbsp;
-        </p>
+      </p>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
