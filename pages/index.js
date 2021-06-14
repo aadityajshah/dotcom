@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,7 +15,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <br/ ><a href="https://www.aadityashah.com">AADITYASHAHdotCOM! </a>
+          Welcome!<br/ >
+          <a href="https://www.aadityashah.com">
+            <Image src="/images/face.png"
+              height={400}
+              width={400}
+              alt="AADITYASHAHdotCOM"
+              >
+            </Image>
+          </a>
         </h1>
 
         <p className={styles.description}>
@@ -24,23 +32,23 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="/AJShah.pdf" className={styles.card}>
+          <a href="/AJShah-2021.pdf" className={styles.card}>
             <h3>Résumé &rarr;</h3>
             <p>Download a copy of my résumé.</p>
+          </a>
+
+          <a
+            href="/about"
+            className={styles.card}
+          >
+            <h3>About &rarr;</h3>
+            <p>Some information about me...</p>
           </a>
 
           <a href="/blog/first-post" 
             className={styles.card}>
                   <h3>Blog &rarr;</h3>
                   <p>Read my rants...</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Reviews &rarr;</h3>
-            <p>Read my reviews on everything...</p>
           </a>
 
           <a
