@@ -4,8 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: gray;
-  color:white;
+  background-color: #012E40;
+  color:#048ABF;
 }
 
 a {
@@ -20,9 +20,9 @@ a {
 .fa_icon
 {
   margin:7px;
-  color:darkgray;
+  color:#048ABF;
 }
 
 .fa_icon:hover {
-  color:blueviolet;
+  color:#ABBF0F;
 }

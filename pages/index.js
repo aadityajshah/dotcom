@@ -7,7 +7,7 @@ import { faFacebookSquare, faLinkedin, faTwitterSquare, faGitSquare, faInstagram
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container + "  greeny"}>
       <Head>
         <title>AADITYASHAHdotCOM</title>
         <link rel="icon" href="/face.jpeg" />
@@ -29,14 +29,11 @@ export default function Home() {
             <p>Download a copy of my résumé.</p>
           </a>
 
-          <div className={styles.card}>{' '}
-              <Link href="/blog/first-post">
-                <a>
+          <a href="/blog/first-post" 
+            className={styles.card}>
                   <h3>Blog &rarr;</h3>
                   <p>Read my rants...</p>
-                </a>
-              </Link>
-          </div>
+          </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
