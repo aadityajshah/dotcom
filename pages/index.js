@@ -5,9 +5,10 @@ import styles from '../styles/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faLinkedin, faTwitterSquare, faGitSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 
+
 export default function Home() {
   return (
-    <div className={styles.container + "  greeny"}>
+    <div className={styles.container}>
       <Head>
         <title>AADITYASHAHdotCOM</title>
         <link rel="icon" href="/face.jpeg" />
@@ -17,12 +18,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome!<br/ >
           <a href="https://www.aadityashah.com">
-            <Image src="/images/face.png"
-              height={400}
-              width={400}
-              alt="AADITYASHAHdotCOM"
-              >
-            </Image>
+            <Image src="/images/face.png" alt="my face" width='400' height='400'></Image>
           </a>
         </h1>
 
