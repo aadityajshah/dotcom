@@ -26,59 +26,59 @@ class Navigation extends PureComponent {
     return (
       <div className="NavigationWrapper">
         <Link
-          href="AJShah-2021.pdf"
+          href="/AJShah-2021.pdf"
           alt="Resume"
           title="Resume"
           >
-          <a><FontAwesomeIcon icon={faFile} height="16" className="fa_icon"></FontAwesomeIcon></a>
+          <a><FontAwesomeIcon icon={faFile} height="16" className="fa_icon" /></a>
         </Link>
         <Link
           href="#"
           alt="blog coming soon"
           >
-          <a><FontAwesomeIcon icon={faBookOpen} width="16" className="fa_icon"></FontAwesomeIcon></a>
+          <a><FontAwesomeIcon icon={faBookOpen} width="16" className="fa_icon" /></a>
         </Link>
         <Link 
             href="https://www.linkedin.com/in/aadityajshah"
             target="_blank"
             rel="noreferrer"
             >
-             <a><FontAwesomeIcon icon={faLinkedin} width="16" className="fa_icon"/></a>
+             <a><FontAwesomeIcon icon={faLinkedin} width="16" className="fa_icon" /></a>
         </Link>
         <Link 
             href="https://www.facebook.com/nagarseth"
             target="_blank"
             rel="noreferrer"
             >
-              <a><FontAwesomeIcon icon={faFacebookSquare} width="16" className="fa_icon"/></a>
+              <a><FontAwesomeIcon icon={faFacebookSquare} width="16" className="fa_icon" /></a>
         </Link>
         <Link
             href="https://www.twitter.com/nagerseth"
             target="_blank"
             rel="noreferrer"
             >
-              <a><FontAwesomeIcon icon={faTwitterSquare} width="16" className="fa_icon"/></a>
+              <a><FontAwesomeIcon icon={faTwitterSquare} width="16" className="fa_icon" /></a>
         </Link>
         <Link
             href="https://www.github.com/aadityajshah"
             target="_blank"
             rel="noreferrer"
             >
-              <a><FontAwesomeIcon icon={faGitSquare} width="16" className="fa_icon"/></a>
+              <a><FontAwesomeIcon icon={faGitSquare} width="16" className="fa_icon" /></a>
         </Link>
         <Link
             href="https://www.instagram.com/nagerseth"
             target="_blank"
             rel="noreferrer"
             >
-            <FontAwesomeIcon icon={faInstagramSquare} width="16" className="fa_icon"/>
+            <a><FontAwesomeIcon icon={faInstagramSquare} width="16" className="fa_icon" /></a>
         </Link>
         <Link
             href="https://www.yelp.com/user_details?userid=LURpBEvYVQh-ZAfZmkxeCg"
             target="_blank"
             rel="noreferrer"
             >
-            <FontAwesomeIcon icon={faYelp} height="16" className="fa_icon"/>
+            <a><FontAwesomeIcon icon={faYelp} height="16" className="fa_icon" /></a>
         </Link>
       </div>
     );
