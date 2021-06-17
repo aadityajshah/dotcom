@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile, faBookOpen } from '@fortawesome/free-solid-svg-icons'
-import { faFacebookSquare, faLinkedin, faTwitterSquare, faGitSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faTwitterSquare, faGitSquare, faInstagramSquare, faYelp } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
 
 
@@ -17,29 +17,7 @@ class Navigation extends PureComponent {
     };
   }
 
-  componentWillMount = () => {
-    console.log('Navigation will mount');
-  }
-
-  componentDidMount = () => {
-    console.log('Navigation mounted');
-  }
-
-  componentWillReceiveProps = (nextProps) => {
-    console.log('Navigation will receive props', nextProps);
-  }
-
-  componentWillUpdate = (nextProps, nextState) => {
-    console.log('Navigation will update', nextProps, nextState);
-  }
-
-  componentDidUpdate = () => {
-    console.log('Navigation did update');
-  }
-
-  componentWillUnmount = () => {
-    console.log('Navigation will unmount');
-  }
+ 
 
   render () {
     if (this.state.hasError) {
@@ -94,6 +72,13 @@ class Navigation extends PureComponent {
             rel="noreferrer"
             >
             <FontAwesomeIcon icon={faInstagramSquare} width="16" className="fa_icon"/>
+        </Link>
+        <Link
+            href="https://www.yelp.com/user_details?userid=LURpBEvYVQh-ZAfZmkxeCg"
+            target="_blank"
+            rel="noreferrer"
+            >
+            <FontAwesomeIcon icon={faYelp} height="16" className="fa_icon"/>
         </Link>
       </div>
     );
