@@ -27,8 +27,15 @@
   color: #f2f2f2;
 }
 
+body[data-theme="light"] .footer {
+  color:#005d8e;
+  border-top: 1px solid #005d8e;
+
+}
+
 .footer img {
   margin-left: 0.5rem;
+  fill:#005d8e;
 }
 
 .footer a {
