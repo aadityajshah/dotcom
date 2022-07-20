@@ -5,16 +5,8 @@ import styles from '../../styles/Home.module.css'
 const Footer = (props) => (
   <footer className={styles.footer}>
       <p>
-        Copyright 2021 Aaditya Shah.&nbsp;
+        Copyright © 2021 Aaditya Shah.&nbsp;
       </p>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <img src="/vercel-light.svg" alt="Vercel Logo" className={styles.logo} />
-      </a>
   </footer>
 );
 

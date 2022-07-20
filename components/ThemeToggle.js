@@ -3,10 +3,10 @@
 import styled from "@emotion/styled"
 import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 
 const ToggleButton = styled.button`
-  --toggle-padding: 4px;
+  --toggle-padding: 36px;
   display: flex;
   font-size: 1.5rem;
   line-height: 1;
@@ -30,7 +30,7 @@ const ThemeToggle = () => {
     <ToggleButton type="button"
         onClick={() => setActiveTheme(inactiveTheme)}
         activeTheme={activeTheme} >
-      <FontAwesomeIcon icon={faSun} height="16" />
+      <FontAwesomeIcon icon={faLightbulb} height="28" padding="15" />
     </ToggleButton>
   )
 }

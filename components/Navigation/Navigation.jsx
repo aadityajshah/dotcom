@@ -45,13 +45,6 @@ class Navigation extends PureComponent {
             >
              <a><FontAwesomeIcon icon={faLinkedin} width="16" className="fa_icon" /></a>
         </Link>
-        <Link 
-            href="https://www.facebook.com/nagarseth"
-            target="_blank"
-            rel="noreferrer"
-            >
-              <a><FontAwesomeIcon icon={faFacebookSquare} width="16" className="fa_icon" /></a>
-        </Link>
         <Link
             href="https://www.twitter.com/nagerseth"
             target="_blank"
@@ -65,20 +58,6 @@ class Navigation extends PureComponent {
             rel="noreferrer"
             >
               <a><FontAwesomeIcon icon={faGitSquare} width="16" className="fa_icon" /></a>
-        </Link>
-        <Link
-            href="https://www.instagram.com/nagerseth"
-            target="_blank"
-            rel="noreferrer"
-            >
-            <a><FontAwesomeIcon icon={faInstagramSquare} width="16" className="fa_icon" /></a>
-        </Link>
-        <Link
-            href="https://www.yelp.com/user_details?userid=LURpBEvYVQh-ZAfZmkxeCg"
-            target="_blank"
-            rel="noreferrer"
-            >
-            <a><FontAwesomeIcon icon={faYelp} height="16" className="fa_icon" /></a>
         </Link>
       </div>
     );
