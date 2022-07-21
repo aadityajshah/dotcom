@@ -33,7 +33,7 @@ class Navigation extends PureComponent {
           <a><FontAwesomeIcon icon={faFile} height="16" className="fa_icon" /></a>
         </Link>
         <Link
-          href="/posts"
+          href="#"
           alt="blog"
           >
           <a><FontAwesomeIcon icon={faBookOpen} width="16" className="fa_icon" /></a>
