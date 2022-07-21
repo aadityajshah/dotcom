@@ -26,15 +26,15 @@ class Navigation extends PureComponent {
     return (
       <div className="NavigationWrapper">
         <Link
-          href="/AJShah-2021.pdf"
+          href="/AJShah-2022.pdf"
           alt="Resume"
           title="Resume"
           >
           <a><FontAwesomeIcon icon={faFile} height="16" className="fa_icon" /></a>
         </Link>
         <Link
-          href="#"
-          alt="blog coming soon"
+          href="/posts"
+          alt="blog"
           >
           <a><FontAwesomeIcon icon={faBookOpen} width="16" className="fa_icon" /></a>
         </Link>
