@@ -26,7 +26,7 @@ class Navigation extends PureComponent {
     return (
       <div className="NavigationWrapper">
         <Link
-          href="/AJShah-2022.pdf"
+          href="/AJShah-June2024.pdf"
           alt="Resume"
           title="Resume"
           >
