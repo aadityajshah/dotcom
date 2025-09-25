@@ -1,0 +1,188 @@
+/* Base Styles */
+:root {
+    --bg-color: #1a0d2e;
+    --text-color: #e6d7ff;
+    --prompt-color: #7b2cbf;
+    --cursor-color: #9d4edd;
+    --highlight-color: #c77dff;
+    --error-color: #ff6b9d;
+    --header-bg: #240046;
+    --button-red: #ff5f56;
+    --button-yellow: #ffbd2e;
+    --button-green: #27c93f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0519 0%, #240046 50%, #3c096c 100%);
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Terminal Styling */
+.terminal {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(123, 44, 191, 0.3), 0 0 50px rgba(157, 78, 221, 0.2);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(199, 125, 255, 0.2);
+}
+
+.terminal-header {
+    background-color: var(--header-bg);
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background-color: var(--button-red); }
+.yellow { background-color: var(--button-yellow); }
+.green { background-color: var(--button-green); }
+
+.title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    pointer-events: none;
+}
+
+.terminal-body {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    font-size: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #333;
+}
+
+.terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: #333;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background-color: rgba(157, 78, 221, 0.6);
+    border-radius: 4px;
+}
+
+.welcome-message {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.prompt {
+    color: var(--prompt-color);
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.command-input {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+    caret-color: var(--cursor-color);
+}
+
+.cursor {
+    color: var(--cursor-color);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Command Output Styling */
+.command-output {
+    margin: 10px 0 20px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.command-output a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.command-output a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: var(--error-color);
+}
+
+.command-name {
+    color: var(--prompt-color);
+    font-weight: bold;
+}
+
+.command-description {
+    color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terminal {
+        height: 100vh;
+        border-radius: 0;
+    }
+    
+    .terminal-body {
+        padding: 15px;
+    }
+    
+    .command-input {
+        width: 100%;
+    }
+}
