@@ -1,0 +1,18 @@
+{
+  "name": "aadityashah dotcom",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "schema:apply": "wrangler d1 execute blog_db --file=./schema.sql --local",
+    "schema:apply:prod": "wrangler d1 execute blog_db --file=./schema.sql"
+  },
+  "dependencies": {
+    "hono": "^4.7.11"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0",
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "typescript": "^5.5.3"
+  }
+}
