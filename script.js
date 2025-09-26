@@ -125,6 +125,8 @@ U.S. House of Representatives - 2016 to 2018
 
 Education:
 - B.S. in Information Technology, Rochester Institute of Technology, 2010
+
+<a href="AJShah-Sept2025.pdf">Download</a> my full resume.
 `;
         addLine(resumeText, 'command-output', true);
     }
