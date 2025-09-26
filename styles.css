@@ -23,7 +23,7 @@ body {
     color: var(--text-color);
     font-family: 'Courier New', monospace;
     line-height: 1.5;
-    height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ body {
 .terminal {
     width: 100%;
     max-width: 900px;
-    height: 600px;
+    height: min(80dvh, 600px);
     background-color: var(--bg-color);
     border-radius: 8px;
     overflow: hidden;
@@ -49,6 +49,7 @@ body {
     padding: 8px 12px;
     display: flex;
     align-items: center;
+    position: relative;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -107,6 +108,13 @@ body {
     line-height: 1.6;
 }
 
+.welcome-message pre {
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
 .input-line {
     display: flex;
     align-items: center;
@@ -125,7 +133,7 @@ body {
     border: none;
     color: var(--text-color);
     font-family: 'Courier New', monospace;
-    font-size: 16px;
+    font-size: 16px; /* Prevent iOS zoom */
     flex-grow: 1;
     outline: none;
     caret-color: var(--cursor-color);
@@ -174,7 +182,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .terminal {
-        height: 100vh;
+        height: 100dvh;
         border-radius: 0;
     }
     
@@ -184,5 +192,32 @@ body {
     
     .command-input {
         width: 100%;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-body {
+        font-size: 14px;
+    }
+
+    .welcome-message pre {
+        font-size: 9px;
+        line-height: 1;
+    }
+
+    .prompt {
+        margin-right: 6px;
+    }
+
+    .input-line {
+        min-height: 44px; /* Comfortable touch target */
+    }
+
+    .command-input {
+        padding: 8px 0;
     }
 }

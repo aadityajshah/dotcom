@@ -160,7 +160,7 @@ You can reach me at:
         inputLine.className = 'input-line';
         inputLine.innerHTML = `
             <span class="prompt">user@aadityashah.com:~$</span>
-            <input type="text" class="command-input" autofocus>
+            <input type="text" class="command-input" autofocus autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" inputmode="text">
             <span class="cursor">█</span>
         `;
         
@@ -173,7 +173,13 @@ You can reach me at:
         }
 
         const newInput = inputLine.querySelector('input');
-        newInput.focus();
+        newInput.focus({ preventScroll: true });
+        // Ensure the latest input line is visible, especially on mobile keyboards
+        try {
+            inputLine.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        } catch (_) {
+            terminal.scrollTop = terminal.scrollHeight;
+        }
         
         // Set up event listeners for the new input
         setupInputListeners(newInput);
