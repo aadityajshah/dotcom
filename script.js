@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 showContact();
                 break;
             case `red-pill`:
-                window.location.href("https://coagar.aadityashah.com");
+                window.location.href("https://cogar.aadityashah.com");
+                break;
             case 'clear':
                 clearTerminal();
                 return; // Skip adding new input line
