@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Display the command
-        addLine(`user@aadityashah.com:~$ ${command}`, 'command-output');
+        addLine(`user@aadityashah dot com:~$ ${command}`, 'command-output');
 
         // Process the command
         const [cmd, ...args] = command.trim().split(' ');
@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'contact':
                 showContact();
                 break;
+            case `red-pill`:
+                window.location.href("https://coagar.aadityashah.com");
             case 'clear':
                 clearTerminal();
                 return; // Skip adding new input line
@@ -161,7 +163,7 @@ You can reach me at:
         const inputLine = document.createElement('div');
         inputLine.className = 'input-line';
         inputLine.innerHTML = `
-            <span class="prompt">user@aadityashah.com:~$</span>
+            <span class="prompt">user@aadityashah dot com:~$</span>
             <input type="text" class="command-input" autofocus autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" inputmode="text">
             <span class="cursor">█</span>
         `;
