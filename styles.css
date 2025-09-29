@@ -110,7 +110,7 @@ body {
 
 .welcome-message pre {
     max-width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     font-size: 12px;
     line-height: 1.1;
 }
@@ -207,6 +207,7 @@ body {
     .welcome-message pre {
         font-size: 9px;
         line-height: 1;
+        overflow-x: auto;
     }
 
     .prompt {
