@@ -98,7 +98,7 @@ I have worked with companies like <a href="https://acquia.com" target="_blank">A
 
 I love creating efficient, scalable, and user-friendly applications and implementations.
 
-Skills: JavaScript, React, Node.js, Python, PHP, mySQL, Cybersecurity, and much much more. I am a forever student, learning and evolving.
+Skills: JavaScript, React, Node.js, TypeScript, Python, PHP, mySQL, Cybersecurity, and much much more. I am a forever student, learning and evolving.
 `;
         addLine(aboutText, 'command-output', true);
     }
